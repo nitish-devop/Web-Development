@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      form {
+        width: 60vw;
+        padding: 1vw;
+        margin: 0 auto;
+      }
+      form h1{
+        text-align: center;
+      }
+      form div {
+        margin: 1em auto;
+      }
+      form div label {
+        display: block;
+      }
+      form input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      input[type="password"],
+      input[type="submit"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 1%;
+        box-sizing: border-box;
+      }
+      form div label {
+        margin-bottom: 0.5em;
+      }
+
+      form input[type="submit"]{
+        display: block;
+        background-color: crimson;
+        width: 30%;
+        margin: 0 auto;
+        border-radius: 10px;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <h1>Form Practice</h1>
+      <div>
+        <label for="username">Full Name</label>
+        <input type="text" placeholder="Your Name" id="username" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Your Email" id="email" />
+      </div>
+      <div>
+        <label for="msg">Message</label>
+        <textarea type="" placeholder="Your message" id="msg"></textarea>
+      </div>
+      <div>
+        <label for="username">Phone</label>
+        <input type="number" placeholder="Your Contact No" id="phone" />
+      </div>
+      <div>
+        <label for="username">Gender</label>
+        <select name="gender" id="gender">
+          <option value="">Choose one</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div>
+        <label for="username">Payment Mode</label>
+        <input type="radio" id="Gender" name="paymentmode" />Cash
+        <input type="radio" id="Gender" name="paymentmode" />UPI
+      </div>
+      <div>
+        <label for="username">Password</label>
+        <input type="password" id="Gender"  name="paymentmode" />
+      </div>
+      <div>
+        <input type="submit" value="Signup" />
+      </div>
+    </form>
+  </body>
+</html>
